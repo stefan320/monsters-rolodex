@@ -1,0 +1,647 @@
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+.overlay-header,
+select,
+.checkbox-container,
+h2,
+dt,
+::placeholder {
+  font-family: "Roboto Condensed", "Roboto";
+}
+body {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  outline: transparent;
+}
+html {
+  outline-color: transparent;
+  font-family: "Roboto", "Montserrat";
+}
+.margin-l-r {
+  padding: 0 12px;
+}
+
+.col-max {
+  max-width: 95%;
+  margin: 0 auto;
+}
+.mustard {
+  color: #eab766;
+}
+.white {
+  color: #fff;
+}
+
+/*************************
+******
+Nav bar custom styles
+******
+**************************/
+
+.nav-container {
+  background-color: rgba(130, 86, 76, 0.8);
+}
+
+/*************************
+******
+Hero styles
+******
+**************************/
+
+.top-mob-hero {
+  background: transparent url("../imgs/healty-breakfast-hero.jpg") fixed
+    no-repeat top;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+
+.hero-overlay {
+  width: 100%;
+  height: 14%;
+  background-color: #eee7d3;
+  position: absolute;
+  bottom: 20%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.overlay-header {
+  text-transform: uppercase;
+  font-size: 50px;
+  color: #82564c;
+}
+
+/*************************
+******
+Select styles
+******
+**************************/
+.order-section {
+  max-width: 100%;
+  background-color: #eab766;
+  text-align: center;
+}
+
+.selection-header {
+  color: white;
+  font-weight: 300;
+  font-style: italic;
+  padding: 50px 0;
+}
+.select-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  height: 50px;
+  margin-bottom: 20px;
+  color: #eab766;
+  background-color: #82564c;
+  background-repeat: no-repeat;
+  background-position: left top, 95% center;
+  text-align-last: center;
+}
+
+.bread-select {
+  background-image: url("../icons/bread-type.svg"),
+    url("../icons/select-arrow.svg");
+  /* padding-left: 40%; */
+}
+
+.sauces-select {
+  background-image: url("../icons/sauces.svg"), url("../icons/select-arrow.svg");
+  /* padding-left: 45%; */
+}
+
+.side-dishes-select {
+  background-image: url("../icons/side-dishes.svg"),
+    url("../icons/select-arrow.svg");
+  /* padding-left: 40%; */
+}
+.drinks-select {
+  background-image: url("../icons/drinks.svg"), url("../icons/select-arrow.svg");
+  /* padding-left: 45%; */
+}
+.toasted-select {
+  background-image: url("../icons/toast.svg"), url("../icons/select-arrow.svg");
+  /* padding-left: 45%; */
+}
+
+.toasted-select {
+  margin-bottom: 0;
+}
+/*************************
+******
+button styles
+******
+**************************/
+.order-nav {
+  padding: 35px 0;
+}
+.btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  color: #fff;
+  margin-bottom: 0;
+}
+.icon-small {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+.submit-order {
+  background: #ddc397 url("../icons/submit-sm.svg") no-repeat center;
+  height: 50px;
+  width: 50%;
+  margin: 20px auto 0;
+}
+.pd-x-10 {
+  padding: 0 20px;
+}
+/*************************
+******
+Order checkout Div styles
+******
+**************************/
+.checkout {
+  visibility: hidden;
+  width: 100%;
+  height: 0px; /* height is set by javascript printOrder function */
+  transition: all 1.5s;
+  background: transparent url("../imgs/wood2.jpg") center repeat;
+  background-size: cover;
+  overflow-y: scroll;
+}
+.checkout::-webkit-scrollbar {
+  margin-right: 10px;
+  width: 6px;
+}
+
+.checkout::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(45, 126, 155, 0.7);
+  border-radius: 6px;
+}
+
+.checkout::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: 0 0 6px rgba(45, 126, 155, 0.7);
+  background-color: #000;
+}
+.show-order {
+  visibility: visible;
+  height: 550px;
+  margin-bottom: 25px;
+}
+
+.order-h-container {
+  width: 85%;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.order-heading {
+  color: #fff;
+  background-color: rgba(234, 183, 102, 0.7);
+  padding: 25px 0;
+  border-radius: 25px 25px 0 0;
+}
+
+.order-container {
+  margin: 0 auto;
+  width: 85%;
+  background-color: rgba(45, 126, 155, 0.7);
+}
+.order-details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.bread-cart {
+  padding: 20px;
+}
+
+.sandwich-header {
+  color: #eab766;
+  padding-bottom: 16px;
+}
+
+.item,
+.price {
+  display: inline-block;
+  padding: 8px 0;
+}
+.total,
+.total-price,
+.print-bill {
+  display: inline-block;
+}
+
+.item {
+  color: #fff;
+  text-align: left;
+  text-transform: capitalize;
+  width: 62.5%;
+}
+
+.price {
+  color: #eab766;
+  margin: 0;
+  text-align: right;
+  width: 22.5%;
+}
+.bill-div {
+  border-top: 1px solid #fff;
+}
+/*************************
+******
+FORM STYLES
+******
+**************************/
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 25px;
+  /* A 25px margin bottom is added to show order div */
+}
+
+.input-grow {
+  flex-basis: 100%;
+}
+.flex-order {
+  order: 2;
+}
+
+.submit-order {
+  order: 4;
+}
+
+.input,
+.contact-input {
+  width: 49.5%;
+  height: 40px;
+  background-color: #ddc397;
+  border: none;
+  margin: 3px 0;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  font-size: 0.6rem;
+  color: #82564c;
+  font-weight: 700;
+  padding: 0 7px;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  font-size: 0.6rem;
+  color: #82564c;
+  font-weight: 700;
+  padding: 0 7px;
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  font-size: 0.6rem;
+  color: #82564c;
+  font-weight: 700;
+  padding: 0 7px;
+}
+:-moz-placeholder {
+  /* Firefox 18- */
+  font-size: 0.6rem;
+  color: #82564c;
+  font-weight: 700;
+  padding: 0 7px;
+}
+
+/*************************
+******
+Select Checkbox
+******
+**************************/
+
+fieldset {
+  text-align: justify;
+  border: none;
+  background-color: #82564c;
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+fieldset legend {
+  display: none;
+}
+
+.hidden {
+  visibility: hidden;
+}
+.checkbox-div {
+  padding: 8px 0 8px 12px;
+}
+
+.label {
+  display: inline-block;
+  width: 75%;
+  color: #eab766;
+}
+
+.checkbox-container p {
+  color: #eab766;
+}
+
+/*************************
+******
+CONTACT STYLES
+******
+**************************/
+.bg-container {
+  height: 90vh;
+  width: 100%;
+  background: #2d7e9b url("../imgs/contact-bg.jpeg") fixed no-repeat center;
+  background-size: cover;
+  text-align: center;
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.h-white {
+  color: #fff;
+}
+
+.h-mustard {
+  color: #eab766;
+  display: inline-block;
+  font-size: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eab766;
+  margin: 35px auto;
+}
+
+.contact-info {
+  justify-content: space-between;
+  height: 80px;
+}
+
+.contact-link {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+
+.bg-rgba-blue {
+  background-color: rgba(45, 126, 155, 0.85);
+  height: 25%;
+}
+
+.bg-blue {
+  background-color: #2d7e9b;
+  height: 218px; /* 35px + 35px header margin + 33px header including padding and border + 80px content-info height + 35px space below content-info*/
+  width: 100%;
+  text-align: center;
+}
+
+/*************************
+******
+CONTACT FORM
+******
+**************************/
+.form-bg {
+  margin: 0 auto;
+  background: url("../imgs/pastry-bg-mob.jpg") scroll no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.form-contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  text-align: center;
+  margin: 0;
+}
+
+.form-contact .input {
+  margin: 0 0 10px;
+}
+.contact-submit {
+  background: transparent url("../icons/submit-lg.svg") no-repeat;
+  background-size: cover;
+  width: 126.7px;
+  height: 137.5px;
+  margin: 3px 0 0;
+}
+
+textarea {
+  margin: 3px 0 0;
+  width: calc(99% - 126.7px);
+  border: none;
+  background-color: #ddc397;
+  box-sizing: border-box;
+}
+
+.form-contact .contact-input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder,
+textarea,
+.form-contact .contact-input {
+  color: #2d7e9b;
+  padding-top: 5px;
+}
+
+.checkbox-container {
+  height: 50px;
+  width: 90%;
+  margin: 0 auto 20px;
+  background-color: #82564c;
+  background-image: url("../icons/ingredients-logo.svg"),
+    url("../icons/select-arrow.svg");
+  background-position: left top, 95% center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.checkbox-container-arrow {
+  position: absolute;
+  left: 95%;
+}
+/*************************
+******
+ Footer
+*****
+**************************/
+footer {
+  background-color: #82564c;
+  margin: 0 auto;
+  padding: 26px 0;
+}
+
+.footer-container {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-text > p {
+  margin: 8px 0;
+  font-weight: 300;
+  font-size: 12px;
+  color: #eee7d3;
+}
+
+.footer-icons {
+  order: -1;
+}
+
+.footer-icons > a {
+  text-decoration: none;
+  color: #eee7d3;
+}
+.footer-icons > a > svg {
+  width: 38px;
+  height: 38px;
+  padding: 6px;
+}
+
+@media only screen and (min-width: 550px) {
+  select,
+  .checkbox-container {
+    padding-left: 0 !important;
+    display: inline-block;
+    width: 48%;
+    margin: 0;
+  }
+  .select-container {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    height: 190px;
+  }
+  .order-nav {
+    padding: 40px 0 37px;
+  }
+  .input-grow {
+    max-width: 49.5%;
+  }
+}
+
+@media only screen and (min-width: 730px) {
+  .col-max {
+    max-width: 85%;
+  }
+  .order-section {
+    padding-bottom: 75px;
+  }
+
+  .input {
+    width: 24.5%;
+  }
+  .input,
+  .contact-input {
+    height: 50px;
+  }
+
+  .flex-order {
+    order: 0;
+  }
+
+  .order-details {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .row {
+    margin: 0 auto;
+    width: 50%;
+    padding: 15px 0;
+  }
+
+  .input-grow {
+    max-width: 50%;
+  }
+
+  .email-resize {
+    max-width: 40%;
+  }
+  .submit-order {
+    width: calc(10% - 6px);
+    height: 52px;
+    margin: 3px 0;
+  }
+
+  .form-bg {
+    background: url("../imgs/pastry-bg-md.jpg") scroll no-repeat 0 0;
+    background-size: cover;
+  }
+
+  .form {
+    padding-bottom: 0;
+  }
+
+  textarea {
+    width: calc(99% - 136.7px);
+  }
+  .contact-submit {
+    width: 136.7px;
+    height: 148.5px;
+  }
+
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-text {
+    padding: 0;
+    order: -1;
+  }
+
+  .footer-text > p {
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 880px) {
+  select,
+  .checkbox-container {
+    width: calc(33% - 6px);
+  }
+  .select-container {
+    height: 140px;
+  }
+  .nav-container {
+    height: 140px;
+  }
+}
